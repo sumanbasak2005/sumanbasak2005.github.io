@@ -753,7 +753,7 @@
       <span class="badge">Published Researcher</span>
     </div>
     <div class="hero-links">
-      <a href="/cdn-cgi/l/email-protection#ed9e98808c83c38f8c9e8c86dfddddd8ad8a808c8481c38e8280" class="btn btn-primary">Get In Touch</a>
+      <a href="#contact" class="btn btn-primary">Get In Touch</a>
       <a href="#publications" class="btn btn-ghost">View Publications</a>
     </div>
     <div class="scroll-hint">Scroll to explore</div>
@@ -1092,7 +1092,7 @@
     <h2><span class="line"></span>Contact</h2>
     <p class="contact-sub">Open to peer review collaborations, speaking engagements, and professional connections in SRE, DevOps, and AI-driven payment engineering.</p>
     <div class="contact-links">
-      <a href="/cdn-cgi/l/email-protection#ff8c8a929e91d19d9e8c9e94cdcfcfcabf98929e9693d19c9092" class="btn btn-primary"><span class="__cf_email__" data-cfemail="d0a3a5bdb1befeb2b1a3b1bbe2e0e0e590b7bdb1b9bcfeb3bfbd">[email&#160;protected]</span></a>
+      <a id="email-btn" href="#" class="btn btn-primary">suman.basak2005@gmail.com</a>
       <a href="https://github.com/sumanbasak2005/suman.basak" target="_blank" class="btn btn-ghost">GitHub</a>
       <a href="https://www.linkedin.com/in/suman-basak/" target="_blank" class="btn btn-ghost">LinkedIn</a>
     </div>
@@ -1104,6 +1104,14 @@
     <span>Lead SRE / DevOps Engineer · IEEE Senior Member · IETE Fellow</span>
   </footer>
 
-  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js">
+    // Build email link dynamically to avoid scraping
+    (function() {
+      var u = 'suman.basak2005';
+      var d = 'gmail.com';
+      var el = document.getElementById('email-btn');
+      if (el) { el.href = 'mailto:' + u + '@' + d; }
+    })();
+  </script><script>
     // Scroll reveal
     const observer =
